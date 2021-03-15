@@ -1,0 +1,12 @@
+[submodule "lib"]
+	path = lib
+	url = https://github.com/MstarProject/lib
+[submodule "libp"]
+	path = libp
+	url = https://github.com/MstarProject/libp
+[submodule "class/core"]
+	path = class/core
+	url = https://github.com/MstarProject/core
+[submodule "template/addon"]
+	path = template/addon
+	url = https://github.com/MstarProject/addon
