@@ -1,0 +1,510 @@
+
+                select distinct a.Search code,s.ID_src id_sup
+                    from tecdoc2020q1_test.__crit_art as c
+                    join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0					
+                    join opti_2001.cat_alt_articles a on a.ID_src=c.acr_art_id
+                    join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                    where c.acr_art_id in (
+                        select DISTINCT a.ID_src art_id
+                            FROM opti_2001.cat_alt_link_art lta
+                            join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                            join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                            join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                            join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                        )
+                and c.criteria_name LIKE 'Дополнительный артикул / дополнительная информация 2' AND c.criteria_value LIKE 'Подсоединение справа'
+
+                union all
+
+                select distinct a.Search code,s.ID_src id_sup
+                        from tecdoc2020q1_test.__crit_art_info as c
+                        join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0
+                        join opti_2001.cat_alt_articles a on a.ID_src=c.la_art_id
+                        join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                      where c.la_art_id in (
+                          select DISTINCT a.ID_src art_id
+                              FROM opti_2001.cat_alt_link_art lta
+                              join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                              join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                              join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                              join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                          )
+                and c.criteria_name LIKE 'Дополнительный артикул / дополнительная информация 2' AND c.criteria_value LIKE 'Подсоединение справа'
+
+                select distinct a.Search code,s.ID_src id_sup
+                    from tecdoc2020q1_test.__crit_art as c
+                    join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0					
+                    join opti_2001.cat_alt_articles a on a.ID_src=c.acr_art_id
+                    join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                    where c.acr_art_id in (
+                        select DISTINCT a.ID_src art_id
+                            FROM opti_2001.cat_alt_link_art lta
+                            join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                            join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                            join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                            join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                        )
+                and c.criteria_name LIKE 'Дополнительный артикул / Дополнительная информация' AND c.criteria_value LIKE 'с направляющим острием'
+
+                union all
+
+                select distinct a.Search code,s.ID_src id_sup
+                        from tecdoc2020q1_test.__crit_art_info as c
+                        join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0
+                        join opti_2001.cat_alt_articles a on a.ID_src=c.la_art_id
+                        join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                      where c.la_art_id in (
+                          select DISTINCT a.ID_src art_id
+                              FROM opti_2001.cat_alt_link_art lta
+                              join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                              join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                              join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                              join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                          )
+                and c.criteria_name LIKE 'Дополнительный артикул / Дополнительная информация' AND c.criteria_value LIKE 'с направляющим острием'
+
+                select distinct a.Search code,s.ID_src id_sup
+                    from tecdoc2020q1_test.__crit_art as c
+                    join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0					
+                    join opti_2001.cat_alt_articles a on a.ID_src=c.acr_art_id
+                    join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                    where c.acr_art_id in (
+                        select DISTINCT a.ID_src art_id
+                            FROM opti_2001.cat_alt_link_art lta
+                            join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                            join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                            join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                            join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                        )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'передний мост справа'
+
+                union all
+
+                select distinct a.Search code,s.ID_src id_sup
+                        from tecdoc2020q1_test.__crit_art_info as c
+                        join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0
+                        join opti_2001.cat_alt_articles a on a.ID_src=c.la_art_id
+                        join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                      where c.la_art_id in (
+                          select DISTINCT a.ID_src art_id
+                              FROM opti_2001.cat_alt_link_art lta
+                              join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                              join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                              join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                              join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                          )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'передний мост справа'
+
+                select distinct a.Search code,s.ID_src id_sup
+                    from tecdoc2020q1_test.__crit_art as c
+                    join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0					
+                    join opti_2001.cat_alt_articles a on a.ID_src=c.acr_art_id
+                    join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                    where c.acr_art_id in (
+                        select DISTINCT a.ID_src art_id
+                            FROM opti_2001.cat_alt_link_art lta
+                            join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                            join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                            join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                            join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                        )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'справа'
+
+                union all
+
+                select distinct a.Search code,s.ID_src id_sup
+                        from tecdoc2020q1_test.__crit_art_info as c
+                        join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0
+                        join opti_2001.cat_alt_articles a on a.ID_src=c.la_art_id
+                        join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                      where c.la_art_id in (
+                          select DISTINCT a.ID_src art_id
+                              FROM opti_2001.cat_alt_link_art lta
+                              join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                              join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                              join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                              join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                          )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'справа'
+
+                select distinct a.Search code,s.ID_src id_sup
+                    from tecdoc2020q1_test.__crit_art as c
+                    join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0					
+                    join opti_2001.cat_alt_articles a on a.ID_src=c.acr_art_id
+                    join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                    where c.acr_art_id in (
+                        select DISTINCT a.ID_src art_id
+                            FROM opti_2001.cat_alt_link_art lta
+                            join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                            join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                            join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                            join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                        )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'сзади справа'
+
+                union all
+
+                select distinct a.Search code,s.ID_src id_sup
+                        from tecdoc2020q1_test.__crit_art_info as c
+                        join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0
+                        join opti_2001.cat_alt_articles a on a.ID_src=c.la_art_id
+                        join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                      where c.la_art_id in (
+                          select DISTINCT a.ID_src art_id
+                              FROM opti_2001.cat_alt_link_art lta
+                              join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                              join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                              join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                              join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                          )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'сзади справа'
+
+                select distinct a.Search code,s.ID_src id_sup
+                    from tecdoc2020q1_test.__crit_art as c
+                    join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0					
+                    join opti_2001.cat_alt_articles a on a.ID_src=c.acr_art_id
+                    join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                    where c.acr_art_id in (
+                        select DISTINCT a.ID_src art_id
+                            FROM opti_2001.cat_alt_link_art lta
+                            join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                            join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                            join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                            join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                        )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'спереди справа'
+
+                union all
+
+                select distinct a.Search code,s.ID_src id_sup
+                        from tecdoc2020q1_test.__crit_art_info as c
+                        join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0
+                        join opti_2001.cat_alt_articles a on a.ID_src=c.la_art_id
+                        join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                      where c.la_art_id in (
+                          select DISTINCT a.ID_src art_id
+                              FROM opti_2001.cat_alt_link_art lta
+                              join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                              join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                              join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                              join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                          )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'спереди справа'
+
+                select distinct a.Search code,s.ID_src id_sup
+                    from tecdoc2020q1_test.__crit_art as c
+                    join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0					
+                    join opti_2001.cat_alt_articles a on a.ID_src=c.acr_art_id
+                    join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                    where c.acr_art_id in (
+                        select DISTINCT a.ID_src art_id
+                            FROM opti_2001.cat_alt_link_art lta
+                            join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                            join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                            join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                            join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                        )
+                and c.criteria_name LIKE 'Дополнительный артикул / дополнительная информация 2' AND c.criteria_value LIKE 'Подсоединение слева'
+
+                union all
+
+                select distinct a.Search code,s.ID_src id_sup
+                        from tecdoc2020q1_test.__crit_art_info as c
+                        join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0
+                        join opti_2001.cat_alt_articles a on a.ID_src=c.la_art_id
+                        join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                      where c.la_art_id in (
+                          select DISTINCT a.ID_src art_id
+                              FROM opti_2001.cat_alt_link_art lta
+                              join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                              join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                              join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                              join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                          )
+                and c.criteria_name LIKE 'Дополнительный артикул / дополнительная информация 2' AND c.criteria_value LIKE 'Подсоединение слева'
+
+                select distinct a.Search code,s.ID_src id_sup
+                    from tecdoc2020q1_test.__crit_art as c
+                    join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0					
+                    join opti_2001.cat_alt_articles a on a.ID_src=c.acr_art_id
+                    join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                    where c.acr_art_id in (
+                        select DISTINCT a.ID_src art_id
+                            FROM opti_2001.cat_alt_link_art lta
+                            join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                            join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                            join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                            join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                        )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'слева'
+
+                union all
+
+                select distinct a.Search code,s.ID_src id_sup
+                        from tecdoc2020q1_test.__crit_art_info as c
+                        join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0
+                        join opti_2001.cat_alt_articles a on a.ID_src=c.la_art_id
+                        join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                      where c.la_art_id in (
+                          select DISTINCT a.ID_src art_id
+                              FROM opti_2001.cat_alt_link_art lta
+                              join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                              join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                              join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                              join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                          )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'слева'
+
+                select distinct a.Search code,s.ID_src id_sup
+                    from tecdoc2020q1_test.__crit_art as c
+                    join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0					
+                    join opti_2001.cat_alt_articles a on a.ID_src=c.acr_art_id
+                    join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                    where c.acr_art_id in (
+                        select DISTINCT a.ID_src art_id
+                            FROM opti_2001.cat_alt_link_art lta
+                            join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                            join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                            join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                            join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                        )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'передний мост слева'
+
+                union all
+
+                select distinct a.Search code,s.ID_src id_sup
+                        from tecdoc2020q1_test.__crit_art_info as c
+                        join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0
+                        join opti_2001.cat_alt_articles a on a.ID_src=c.la_art_id
+                        join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                      where c.la_art_id in (
+                          select DISTINCT a.ID_src art_id
+                              FROM opti_2001.cat_alt_link_art lta
+                              join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                              join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                              join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                              join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                          )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'передний мост слева'
+
+                select distinct a.Search code,s.ID_src id_sup
+                    from tecdoc2020q1_test.__crit_art as c
+                    join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0					
+                    join opti_2001.cat_alt_articles a on a.ID_src=c.acr_art_id
+                    join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                    where c.acr_art_id in (
+                        select DISTINCT a.ID_src art_id
+                            FROM opti_2001.cat_alt_link_art lta
+                            join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                            join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                            join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                            join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                        )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'сзади слева'
+
+                union all
+
+                select distinct a.Search code,s.ID_src id_sup
+                        from tecdoc2020q1_test.__crit_art_info as c
+                        join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0
+                        join opti_2001.cat_alt_articles a on a.ID_src=c.la_art_id
+                        join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                      where c.la_art_id in (
+                          select DISTINCT a.ID_src art_id
+                              FROM opti_2001.cat_alt_link_art lta
+                              join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                              join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                              join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                              join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                          )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'сзади слева'
+
+                select distinct a.Search code,s.ID_src id_sup
+                    from tecdoc2020q1_test.__crit_art as c
+                    join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0					
+                    join opti_2001.cat_alt_articles a on a.ID_src=c.acr_art_id
+                    join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                    where c.acr_art_id in (
+                        select DISTINCT a.ID_src art_id
+                            FROM opti_2001.cat_alt_link_art lta
+                            join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                            join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                            join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                            join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                        )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'спереди слева'
+
+                union all
+
+                select distinct a.Search code,s.ID_src id_sup
+                        from tecdoc2020q1_test.__crit_art_info as c
+                        join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0
+                        join opti_2001.cat_alt_articles a on a.ID_src=c.la_art_id
+                        join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                      where c.la_art_id in (
+                          select DISTINCT a.ID_src art_id
+                              FROM opti_2001.cat_alt_link_art lta
+                              join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                              join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                              join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                              join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                          )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'спереди слева'
+
+                select distinct a.Search code,s.ID_src id_sup
+                    from tecdoc2020q1_test.__crit_art as c
+                    join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0					
+                    join opti_2001.cat_alt_articles a on a.ID_src=c.acr_art_id
+                    join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                    where c.acr_art_id in (
+                        select DISTINCT a.ID_src art_id
+                            FROM opti_2001.cat_alt_link_art lta
+                            join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                            join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                            join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                            join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                        )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'задний мост'
+
+                union all
+
+                select distinct a.Search code,s.ID_src id_sup
+                        from tecdoc2020q1_test.__crit_art_info as c
+                        join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0
+                        join opti_2001.cat_alt_articles a on a.ID_src=c.la_art_id
+                        join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                      where c.la_art_id in (
+                          select DISTINCT a.ID_src art_id
+                              FROM opti_2001.cat_alt_link_art lta
+                              join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                              join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                              join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                              join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                          )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'задний мост'
+
+                select distinct a.Search code,s.ID_src id_sup
+                    from tecdoc2020q1_test.__crit_art as c
+                    join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0					
+                    join opti_2001.cat_alt_articles a on a.ID_src=c.acr_art_id
+                    join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                    where c.acr_art_id in (
+                        select DISTINCT a.ID_src art_id
+                            FROM opti_2001.cat_alt_link_art lta
+                            join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                            join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                            join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                            join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                        )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'сзади'
+
+                union all
+
+                select distinct a.Search code,s.ID_src id_sup
+                        from tecdoc2020q1_test.__crit_art_info as c
+                        join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0
+                        join opti_2001.cat_alt_articles a on a.ID_src=c.la_art_id
+                        join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                      where c.la_art_id in (
+                          select DISTINCT a.ID_src art_id
+                              FROM opti_2001.cat_alt_link_art lta
+                              join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                              join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                              join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                              join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                          )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'сзади'
+
+                select distinct a.Search code,s.ID_src id_sup
+                    from tecdoc2020q1_test.__crit_art as c
+                    join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0					
+                    join opti_2001.cat_alt_articles a on a.ID_src=c.acr_art_id
+                    join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                    where c.acr_art_id in (
+                        select DISTINCT a.ID_src art_id
+                            FROM opti_2001.cat_alt_link_art lta
+                            join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                            join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                            join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                            join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                        )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'сзади справа'
+
+                union all
+
+                select distinct a.Search code,s.ID_src id_sup
+                        from tecdoc2020q1_test.__crit_art_info as c
+                        join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0
+                        join opti_2001.cat_alt_articles a on a.ID_src=c.la_art_id
+                        join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                      where c.la_art_id in (
+                          select DISTINCT a.ID_src art_id
+                              FROM opti_2001.cat_alt_link_art lta
+                              join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                              join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                              join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                              join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                          )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'сзади справа'
+
+                select distinct a.Search code,s.ID_src id_sup
+                    from tecdoc2020q1_test.__crit_art as c
+                    join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0					
+                    join opti_2001.cat_alt_articles a on a.ID_src=c.acr_art_id
+                    join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                    where c.acr_art_id in (
+                        select DISTINCT a.ID_src art_id
+                            FROM opti_2001.cat_alt_link_art lta
+                            join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                            join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                            join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                            join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                        )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'сзади слева'
+
+                union all
+
+                select distinct a.Search code,s.ID_src id_sup
+                        from tecdoc2020q1_test.__crit_art_info as c
+                        join tecdoc2020q1_test.link_pt_cri as l on l.LPC_CRI_ID=c.cri_id and l.LPC_SUGGESTION=0
+                        join opti_2001.cat_alt_articles a on a.ID_src=c.la_art_id
+                        join opti_2001.cat_alt_suppliers s on a.ID_sup=s.ID_sup
+                      where c.la_art_id in (
+                          select DISTINCT a.ID_src art_id
+                              FROM opti_2001.cat_alt_link_art lta
+                              join opti_2001.cat_alt_link_str_grp lsg on lsg.ID_tree in (100627,102244,100030) and lsg.ID_grp=lta.ID_grp
+                              join opti_2001.cat_alt_groups as grp on grp.id_grp=lsg.ID_grp and grp.id_src in (402,70,281,1336,1535)
+                              join opti_2001.cat_alt_articles a on a.ID_art=lta.ID_art
+                              join opti_2001.cat_alt_suppliers s on lta.ID_sup=s.ID_sup
+                         where 1=1
+                          )
+                and c.criteria_name LIKE 'Место установки' AND c.criteria_value LIKE 'сзади слева'
